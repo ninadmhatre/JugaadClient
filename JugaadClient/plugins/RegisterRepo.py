@@ -18,5 +18,5 @@ class RegisterRepo(CommandIPlugin):
         parser.add_argument("-y", "--y")
         self.args = parser.parse_args()
 
-    def execute(self):
+    def execute(self, x):
         self.processArgs()
