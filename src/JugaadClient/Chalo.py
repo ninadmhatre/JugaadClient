@@ -23,8 +23,8 @@ class Chalo():
         self.plugin_places = ["plugins/CommandPlugins", "plugins/TaskPlugins"]
         self.plugin_categories = {'Command': CommandIPlugin, 'Task': TaskIPlugin}
 
-        #Needs to be dynamic here!
-        self.config_file = "../../ClientTesting/Config/Client.ini"
+        #Needs to be much better!!!!
+        self.config_file = ["../../test/Config/Client.ini", "Client.ini", "test/Config/CLient.ini"]
         self.config = configparser.ConfigParser()
 
         self.prepPluginManager()
