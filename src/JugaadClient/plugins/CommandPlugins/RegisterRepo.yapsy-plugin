@@ -1,0 +1,9 @@
+[Core]
+Name = RegisterRepo
+Module = RegisterRepo
+
+[Documentation]
+Author = Nathan Cope
+Version = 1.0
+Description = Registers this repo with the jugaad main server
+Category = Command

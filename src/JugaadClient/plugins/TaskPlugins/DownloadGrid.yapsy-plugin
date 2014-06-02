@@ -1,0 +1,9 @@
+[Core]
+Name = DownloadGrid
+Module = DownloadGrid
+
+[Documentation]
+Author = Nathan Cope
+Version = 1.0
+Description = Downloads a grid from main server and implements it
+Category = Task
