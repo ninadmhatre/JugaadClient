@@ -8,6 +8,6 @@ import shutil
 src_dir = "../src"
 dist_dir = "../dist"
 
-if not os.path.dirname(dist): os.makedirs(dist)
+if not os.path.dirname(dist_dir): os.makedirs(dist_dir)
 
-shutil.copytree(src_dist, dist_dir)
+shutil.copytree(src_dir, dist_dir)
