@@ -5,9 +5,9 @@ __author__ = 'Nathan'
 import os.path
 import shutil
 
-src_dir = "../src"
-dist_dir = "../dist"
+src_dir = "src"
+dist_dir = "dist"
 
 if not os.path.dirname(dist_dir): os.makedirs(dist_dir)
 
-shutil.copytree(src_dir, dist_dir)
+shutil.copytree(src_dir+"/JugaadClient", dist_dir+"/JugaadClient")
