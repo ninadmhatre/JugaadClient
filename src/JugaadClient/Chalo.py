@@ -13,15 +13,15 @@ from pluginCategories.TaskIPlugin import TaskIPlugin
 
 
 class Chalo():
-    '''
+    """
     Client side starts and executes command using CommandIPlugins
-    '''
+    """
     def __init__(self):
         self.plugin_manager = None
 
         #These need to be dynamic
         self.plugin_places = ["plugins/CommandPlugins", "plugins/TaskPlugins"]
-        self.plugin_categories = {'Command':CommandIPlugin, 'Task':TaskIPlugin}
+        self.plugin_categories = {'Command': CommandIPlugin, 'Task': TaskIPlugin}
 
         #Needs to be dynamic here!
         self.config_file = "../../ClientTesting/Config/Client.ini"
@@ -33,7 +33,7 @@ class Chalo():
         self.callPlugin()
 
     def prepPluginManager(self):
-        PluginManagerSingleton.setBehaviour([VersionedPluginManager,])
+        PluginManagerSingleton.setBehaviour([VersionedPluginManager, ])
         self.plugin_manager = PluginManagerSingleton.get()
         self.plugin_manager.setPluginPlaces(self.plugin_places)
 
@@ -49,7 +49,7 @@ class Chalo():
 
     def callPlugin(self):
         for plugin in self.plugin_manager.getPluginsOfCategory('Command'):
-            if (len(sys.argv) > 1 and sys.argv[1] == plugin.name):
+            if len(sys.argv) > 1 and sys.argv[1] == plugin.name:
                 self.executePlugin(plugin)
                 return
         self.printHelp()
