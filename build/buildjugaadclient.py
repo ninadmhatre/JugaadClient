@@ -8,6 +8,9 @@ import shutil
 src_dir = "src"
 dist_dir = "dist"
 
-if not os.path.dirname(dist_dir): os.makedirs(dist_dir)
+try:
+    shutil.rmtree(dist_dir)
+except:
+    os.makedirs(dist_dir)
 
 shutil.copytree(src_dir+"/JugaadClient", dist_dir+"/JugaadClient")
