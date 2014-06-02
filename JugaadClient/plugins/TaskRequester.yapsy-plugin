@@ -1,9 +1,0 @@
-[Core]
-Name = TaskRequester
-Module = TaskRequester
-
-[Documentation]
-Author = Nathan Cope
-Version = 1.0
-Description = Contacts Main Jugaad Server for any tasks assigned to it
-Category = Command
